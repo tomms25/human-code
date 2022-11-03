@@ -1,0 +1,82 @@
+-aprire il frigo
+  -controllare cosa manca in frigo
+      SE mancano ingredienti{
+      -prendere cellulare
+      -aprire note
+      -fare la lista
+
+      -prepararsi
+        -vestirsi
+        -mettersi le scarpe
+        -prendere la borsa
+        -prendere le chiavi
+          SE piove{
+            -prendere giacca
+            -prendere ombrello
+          }
+
+      -prendere la macchina
+      -andare al supermercato
+        -prendere carrello
+        -prendere cellulare per leggere la lista
+        -girare per gli scaffali
+          -verificare disponibilità prodotti
+            SE sono disponibili{
+              -mettere nel carrello
+            }
+
+            ALTRIMENTI{
+              -trovare alternativa
+            }    
+          -prendere snack extra
+
+        -andare alle casse
+          SE accettano coupon{
+            -andare in quelle casse          
+          }
+
+          ALTRIMENTI{
+            -controllare contanti disponibili
+              SE i soldi sono sufficenti{
+                -posso comprare tutto
+              }
+              
+              ALTRIMENTI{
+                -lasciare in cassa snack extra
+              }
+          }
+
+        -mettere prodotti sul rullo
+        -prendere buste
+          SE non le ho{
+            -comprare buste
+          }
+        
+        -pagare spesa
+        -rimettere spesa nel carrello
+        -uscire dal supermercato
+        -andare in macchina
+        -posare spesa in macchina
+        -posare il carrello
+        -tornare a casa
+        -sistemare spesa
+          SE ha necessità di stare in frigo{
+            -mettere in frigo
+          }
+
+          ALTRIMENTI SE è un surgelato{
+            -mettere in freezer
+          }
+
+          ALTRIMENTI{
+            -mettere nella dispensa
+          }
+
+          FINCHE' la ciotola è vuota {
+            -dare crocchette a Ricky
+          }    
+      }
+
+      ALTRIMENTI{
+        -stare a casa
+      }
